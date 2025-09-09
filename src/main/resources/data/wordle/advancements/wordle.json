@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "wordle:wordle"
+    },
+    "title": "New-found addiction",
+    "description": "Craft yourself a new toy to play with.",
+    "background": "minecraft:textures/block/gray_concrete.png",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "craft_wordle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wordle:wordle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 75
+  }
+}
